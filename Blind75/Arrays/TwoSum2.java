@@ -1,3 +1,15 @@
+/*
+ * LeetCode Question No: 1
+ * Question: TwoSum
+ * Solution Version: 2
+ * Input: Array and target
+ * Output: Array
+ * Purpose: Return the array of indices that produces the sum given by the target
+ * Time Complexity: uses O(n) because it goes through the length of the array to put everything into the hashmap
+ * Space Complexity: uses O(n) due to the hashmap storing the n amount of elements
+ * the logic is simply that we are using a hashtable and putting everything in Key = Value and Value = index
+ * This is TWO PASS HASHTABLE METHOD
+ */
 package Blind75.Arrays;
 
 import java.util.HashMap;
