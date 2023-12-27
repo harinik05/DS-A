@@ -8,7 +8,7 @@
  * Time Complexity: uses O(n^2) because this goes through two arrays
  * Space Complexity: Uses O(1) because it doesn't depend on the size of input array
  */
-package Blind75.Arrays;
+package Top_150.Arrays;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

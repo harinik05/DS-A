@@ -10,7 +10,7 @@
  * the logic is simply that we are using a hashtable and putting everything in Key = Value and Value = index
  * This is TWO PASS HASHTABLE METHOD
  */
-package Blind75.Arrays;
+package Top_150.Arrays;
 
 import java.util.HashMap;
 import java.util.Map;
