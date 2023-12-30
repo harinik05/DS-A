@@ -1,4 +1,4 @@
-package Top_150.Arrays;
+package Arrays;
 
 import java.util.HashMap;
 import java.util.Map;
