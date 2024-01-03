@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 
 class Tribonacci_BF {
     public int tribonacci(int n) {
