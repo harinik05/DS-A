@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 //this is logn time 
 class fib_DP {
     public int fib(int n) {
