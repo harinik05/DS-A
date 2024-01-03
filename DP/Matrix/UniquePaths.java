@@ -1,3 +1,7 @@
+package Matrix;
+
+import java.util.Arrays;
+
 class UniquePaths {
     public int uniquePaths(int m, int n) {
         //Use matrix method with DP - The time complexity for this will be O(N*M)

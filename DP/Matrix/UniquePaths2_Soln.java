@@ -1,3 +1,4 @@
+package Matrix;
 class UniquePaths2_Soln {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;
