@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 
 public class fib_DP_modified {
     public int fib(int n) {
