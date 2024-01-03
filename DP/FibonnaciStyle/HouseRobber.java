@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 
 class HouseRobber {
     public int rob(int[] nums) {
