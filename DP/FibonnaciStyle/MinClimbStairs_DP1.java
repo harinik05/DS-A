@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 
 public class MinClimbStairs_DP1 {
     public int minCostClimbingStairs(int[] cost) {
