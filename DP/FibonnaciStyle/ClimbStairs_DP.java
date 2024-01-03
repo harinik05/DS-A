@@ -1,4 +1,4 @@
-package DP.FibonnaciStyle;
+package FibonnaciStyle;
 
 class ClimbStairs_DP {
     //this is dp solution
