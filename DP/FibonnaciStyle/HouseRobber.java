@@ -1,3 +1,5 @@
+package DP.FibonnaciStyle;
+
 class HouseRobber {
     public int rob(int[] nums) {
         //1. set up the base case and n 
