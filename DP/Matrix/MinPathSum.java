@@ -1,3 +1,4 @@
+package Matrix;
 class MinPathSum {
     //This involves calculating 
     public int minPathSum(int[][] grid) {
