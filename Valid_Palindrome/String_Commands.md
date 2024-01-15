@@ -22,4 +22,5 @@ newStr.replaceAll("[^a-zA-Z0-9]","")
 ## 3. Convert string to char array
 ```
 Char[] newArr = newStr.toCharArray();
+str.charAt(index);   //loop through and determine char by string
 ```
