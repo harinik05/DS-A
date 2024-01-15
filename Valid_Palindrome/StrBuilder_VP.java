@@ -7,7 +7,7 @@ public class StrBuilder_VP {
         palindromeString.reverse();
 
         //2. check if its equal with the initial string
-        return palindromeString.equals(inString);
+        return palindromeString.toString().equals(inString);
     }
 
     public String preProcessMethod(String inString){
