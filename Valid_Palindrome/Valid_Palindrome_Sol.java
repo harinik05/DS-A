@@ -1,6 +1,6 @@
 package Valid_Palindrome;
 
-class Valid_Palindrome_Sol {
+class Valid_Palindrome_Sol extends StrBuilder_VP {
     public String returnPalindrome(String inString){
 
        //c. put into a char array
@@ -27,6 +27,16 @@ class Valid_Palindrome_Sol {
        return val;
    }
 
+   public boolean checkIfPalindrome_SecondMethod(String inString){
+    //a. convert to lower case
+    inString = inString.toLowerCase();
+
+    //b. remove all non-alphabetic characters
+    inString = inString.replaceAll("[^a-zA-Z0-9]", "");
+    
+    return formPalindromicString(inString);
+}
+
    public boolean isPalindrome(String s) {
        boolean result = checkIfPalindrome(s);
        return result;
@@ -35,5 +45,8 @@ class Valid_Palindrome_Sol {
    public static void main(String[] args){
         Valid_Palindrome_Sol obj = new Valid_Palindrome_Sol();
         System.out.println(obj.isPalindrome("null"));
+
+        Valid_Palindrome_Sol obj2 = new Valid_Palindrome_Sol();
+        System.out.println(obj2.checkIfPalindrome_SecondMethod("null"));
    }
 }
