@@ -10,5 +10,19 @@ public class StrBuilder_VP {
         return palindromeString.equals(inString);
     }
 
+    public String preProcessMethod(String inString){
+        //a. convert to lower case
+        inString = inString.toLowerCase();
+    
+        //b. remove all non-alphabetic characters
+        inString = inString.replaceAll("[^a-zA-Z0-9]", "");
+        
+        return inString;
+    }
+
+    public static void main(String[] args){
+    }
+    
+
     
 }
