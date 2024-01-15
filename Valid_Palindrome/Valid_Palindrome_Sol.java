@@ -33,6 +33,7 @@ class Valid_Palindrome_Sol {
    }
 
    public static void main(String[] args){
-        
+        Valid_Palindrome_Sol obj = new Valid_Palindrome_Sol();
+        System.out.println(obj.isPalindrome("null"));
    }
 }
