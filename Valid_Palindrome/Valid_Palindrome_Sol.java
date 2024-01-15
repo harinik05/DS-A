@@ -27,14 +27,14 @@ class Valid_Palindrome_Sol extends StrBuilder_VP {
        return val;
    }
 
-   public boolean checkIfPalindrome_SecondMethod(String inString){
+   public String preProcessMethod(String inString){
     //a. convert to lower case
     inString = inString.toLowerCase();
 
     //b. remove all non-alphabetic characters
     inString = inString.replaceAll("[^a-zA-Z0-9]", "");
     
-    return formPalindromicString(inString);
+    return inString;
 }
 
    public boolean isPalindrome(String s) {
@@ -46,7 +46,6 @@ class Valid_Palindrome_Sol extends StrBuilder_VP {
         Valid_Palindrome_Sol obj = new Valid_Palindrome_Sol();
         System.out.println(obj.isPalindrome("null"));
 
-        Valid_Palindrome_Sol obj2 = new Valid_Palindrome_Sol();
-        System.out.println(obj2.checkIfPalindrome_SecondMethod("null"));
+        
    }
 }
