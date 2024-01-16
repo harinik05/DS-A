@@ -1,6 +1,9 @@
-package Three_Sum;
+//package Three_Sum;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -44,6 +47,19 @@ public class OOP_Solution {
 
     //4. main method
     public static void main(String[] args){
-        
+
+        //1. Define some variables and then call the constructor
+        Set<List<Integer>> resultsObj = new HashSet<>();
+        Map<Integer, Integer> mainMapObj = new HashMap<>();
+        OOP_Solution obj = new OOP_Solution(resultsObj, mainMapObj);
+
+        //2. call the returnlist method
+        int[] arr = {-1,1,0,6,7};
+        obj.returnListOfStuff(arr);
+
+        //3. return the value of the results
+        List<List<Integer>> resultsObj_Final = new ArrayList<>(resultsObj);
+        System.out.println(resultsObj_Final);
+
     }
 }
