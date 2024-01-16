@@ -9,7 +9,7 @@ List<Integer> list = Array.toList(arr);
 ## 2. Sorting arrays and lists
 ```
 Arrays.sort(arr);
-Collections.sort(collect);
+Collections.sort(list);
 ```
 
 ## 3. 
