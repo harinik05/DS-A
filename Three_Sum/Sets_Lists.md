@@ -12,4 +12,7 @@ Arrays.sort(arr);
 Collections.sort(list);
 ```
 
-## 3. 
+## 3. Convert from set to list
+```
+List<Integer> list = new ArrayList<>();
+```
