@@ -34,7 +34,9 @@ public class StackSoln {
                 if(this.standardMap.get(arr[i])!=topElem){
                     return false;
                 }
-            }else{
+            }
+            //key not present
+            else{
                 openBrackets.add(arr[i]);
             }
         }
