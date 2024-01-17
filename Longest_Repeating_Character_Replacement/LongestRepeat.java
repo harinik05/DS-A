@@ -6,6 +6,11 @@ public class LongestRepeat {
     private int[] mainStruct;
 
     //2. define a constructor
+    public LongestRepeat(){
+        this.mainStruct = new int[26];
+    }
+
+    //3. 
     public static void main(String[] args){
 
     }
