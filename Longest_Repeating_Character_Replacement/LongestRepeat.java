@@ -21,11 +21,11 @@ public class LongestRepeat {
         int output = 0;
         //3. loop through the array
         for(;rightWindow<s.length();rightWindow++){
-            charArr[rightWindow-'A']++;
-            count = Math.max(count, charArr[rightWindow-'A']);
+            mainStruct[charArr[rightWindow]-'A']++;
+            count = Math.max(count, mainStruct[charArr[rightWindow]-'A']);
             while(rightWindow - leftWindow +1 - count > k){
                 //4. adjust the left window
-                charArr[leftWindow-'A']--;
+                mainStruct[charArr[leftWindow]-'A']--;
                 leftWindow++;
             }
 
