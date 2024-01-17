@@ -41,6 +41,7 @@ public class LongestSubstring {
         return output;
     }
     public static void main(String[] args){
-        
+        LongestSubstring obj = new LongestSubstring();
+        System.out.println(obj.findLongestSubstringLength("abcabbd"));
     }
 }
