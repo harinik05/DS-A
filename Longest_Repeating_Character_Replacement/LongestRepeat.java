@@ -20,12 +20,13 @@ public class LongestRepeat {
         int count = 0;
         int output = 0;
         //3. loop through the array
+        //if im doing -'A', then make sure that im in upper case for the given string 
         for(;rightWindow<s.length();rightWindow++){
-            mainStruct[charArr[rightWindow]-'A']++;
-            count = Math.max(count, mainStruct[charArr[rightWindow]-'A']);
+            mainStruct[charArr[rightWindow]-'a']++;
+            count = Math.max(count, mainStruct[charArr[rightWindow]-'a']);
             while(rightWindow - leftWindow +1 - count > k){
                 //4. adjust the left window
-                mainStruct[charArr[leftWindow]-'A']--;
+                mainStruct[charArr[leftWindow]-'a']--;
                 leftWindow++;
             }
 
@@ -36,6 +37,7 @@ public class LongestRepeat {
         return output;
     }
     public static void main(String[] args){
-
+        LongestRepeat obj = new LongestRepeat();
+        System.out.println(obj.performSlidingWindow("abab", 2));
     }
 }
