@@ -45,6 +45,11 @@ public class StackSoln {
         return openBrackets.isEmpty();
     }
     public static void main(String[] args){
+        //1. create an obj
+        StackSoln obj = new StackSoln();
+        
+        //2. Call the method to check the expression
+        System.out.println(obj.determineValidExpression("{(}}})}"));
 
     }
 }
