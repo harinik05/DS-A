@@ -6,7 +6,14 @@ public class BinarySearchSoln {
     private int rightPointer;
     private int outputNum;
 
-    //2. 
+    //2. Constructor
+    public BinarySearchSoln(int[] nums){
+        this.leftPointer = 0;
+        this.rightPointer = nums.length-1;
+        this.outputNum = 0;
+    }
+
+    //3, 
 
     public static void main(String[] args){
 
