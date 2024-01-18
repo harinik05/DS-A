@@ -42,11 +42,12 @@ public class BinarySearchSoln {
 
 
         }
+        //assuming that left will always be the least and smallest
         return nums[leftPointer];
     }
 
     public static void main(String[] args){
         int[] nums = {7,8,9,1,2,5};
-        
+
     }
 }
