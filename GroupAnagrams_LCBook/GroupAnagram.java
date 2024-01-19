@@ -41,10 +41,14 @@ public class GroupAnagram {
         // 3. for loop again
         for (int j = 0; j < inArr.length; j++) {
             if (outputArr[j] == null) {
-                outputArr[counter++] = inArr[j];
-                for (int k = j + 1; k < inArr.length; k++) {
-                    if (outputArr[k] == null && hm[j].equals(hm[k])) {
-                        outputArr[counter++] = inArr[k];
+                boolean exists = Arrays.binarySearch(outputArr, 0, counter, inArr[j]) >= 0;
+                if (!exists) {
+                    outputArr[counter++] = inArr[j];
+                    for (int k = j + 1; k < inArr.length; k++) {
+                        exists = Arrays.binarySearch(outputArr, 0, counter, inArr[k]) >= 0;
+                        if (outputArr[k] == null && !exists && hm[j].equals(hm[k])) {
+                            outputArr[counter++] = inArr[k];
+                        }
                     }
                 }
             }
