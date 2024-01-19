@@ -13,8 +13,10 @@ public class ArraySoln {
         this.arrayA = inArrA;
         this.arrayB = inArrB;
         this.mergedIndx = this.arrayA.length + this.arrayB.length -1;
-        this.arrALen = inArrA.length;
+        this.arrALen = this.arrayA.length;
         this.arrBLen = inArrB.length;
+        this.arrayA = new int[arrALen+arrBLen];
+
        // this.arrayA = new int[inArrA.length + inArrB.length];
     }
 
@@ -22,15 +24,16 @@ public class ArraySoln {
     public void mergeTwoArrays(){
         //1. start comparing the elements from the end of the array
         while(arrALen > 0 && arrBLen > 0){
-            if(arrayA[arrALen] > arrayB[arrBLen-1]){
+            if(arrayA[arrALen-1] > arrayB[arrBLen-1]){
                 arrayA[mergedIndx] = arrayA[arrALen-1];
                 arrALen--;
-                mergedIndx--;
+                
             }else{
                 arrayA[mergedIndx] = arrayB[arrBLen-1];
                 arrBLen--;
-                mergedIndx--;
+                
             }
+            mergedIndx--;
         }
 
         //2. remaining elements
@@ -42,11 +45,14 @@ public class ArraySoln {
     }
     public static void main(String[] args){
         int[] nums1 = {1,2,3,4,5};
-        int[] nums2 = {2,3,6,7,9,10};
+        int[] nums2 = {1,9,10};
         ArraySoln obj = new ArraySoln(nums1, nums2);
        // nums1 = new int[nums1.length + nums2.length];
         obj.mergeTwoArrays();
 
-        System.out.println(nums1);
+        // Print the merged array
+        for(int i = 0;i<obj.arrayA.length;i++){
+            System.out.println(obj.arrayA[i]);
+        }
     }
 }
