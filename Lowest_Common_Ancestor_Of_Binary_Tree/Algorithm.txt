@@ -1,0 +1,8 @@
+Here is the procedure for finding the lowest common ancestor of binary search tree
+KEY -> DRIFT WITH THE DIRECTION OF P AND Q
+1. Set a current and come up with the base case
+2. While current != null-> go right if p and q are bigger
+3. go left if p and q are smaller
+4. else-> return root
+
+5. worst case -> outside: return null
