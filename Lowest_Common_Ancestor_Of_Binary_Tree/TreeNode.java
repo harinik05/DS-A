@@ -61,7 +61,21 @@ public class TreeNode{
         }
     }
 
-    
+    //traversing a tree (post-order = LRN)
+    public void postOrderTraversal(){
+        //1. left node
+        if(left!=null){
+            left.postOrderTraversal();
+        }
+
+        //2. right node
+        if(right!=null){
+            right.postOrderTraversal();
+        }
+
+        //3. node
+        System.out.println(data);
+    }
 
     //static method with some sample values
     public static TreeNode createSampleTree(){
