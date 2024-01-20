@@ -1,18 +1,8 @@
 package Lowest_Common_Ancestor_Of_Binary_Tree;
 
-import javax.swing.tree.TreeNode;
+//import javax.swing.tree.TreeNode;
 
-public class TreeNode{
-    //variables defined
-    int data;
-    TreeNode left;
-    TreeNode right;
 
-    //constructor
-    TreeNode(int x){
-        this.data=x;
-    }
-}
 class LowestSolution {
     //1. data structure
     private TreeNode root;
@@ -23,7 +13,7 @@ class LowestSolution {
     }
     
     //3. lowest common ancestor function
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode lowestCommonAncestor(TreeNode p, TreeNode q) {
         //a. check base cases
         TreeNode current = root;
         if(current == null){
@@ -49,6 +39,6 @@ class LowestSolution {
     }
 
     public static void main(String[] args){
-
+        //1. 
     }
 }

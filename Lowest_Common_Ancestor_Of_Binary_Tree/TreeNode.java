@@ -7,7 +7,5 @@ public class TreeNode{
     TreeNode right;
 
     //constructor
-    TreeNode(int x){
-        this.data=x;
-    }
+
 }
