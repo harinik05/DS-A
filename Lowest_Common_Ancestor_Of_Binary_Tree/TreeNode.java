@@ -1,4 +1,4 @@
-package Lowest_Common_Ancestor_Of_Binary_Tree;
+//package Lowest_Common_Ancestor_Of_Binary_Tree;
 
 public class TreeNode{
     //variables defined
@@ -27,6 +27,26 @@ public class TreeNode{
             }
         }
     }
+
+    //traversing a tree (in order = LNR)
+    public void inOrderTraversal(){
+        //1. check left
+        if(left!=null){
+            left.inOrderTraversal();
+        }
+
+        //2. node
+        System.out.println(data);
+
+        //3. check right
+        if(right != null){
+            right.inOrderTraversal();
+        }
+
+    }
+
+    //traversing a tree (pre-order = NLR)
+    
 
     //static method with some sample values
     public static TreeNode createSampleTree(){

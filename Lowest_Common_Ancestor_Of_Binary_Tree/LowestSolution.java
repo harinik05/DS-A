@@ -1,4 +1,4 @@
-package Lowest_Common_Ancestor_Of_Binary_Tree;
+//package Lowest_Common_Ancestor_Of_Binary_Tree;
 
 //import javax.swing.tree.TreeNode;
 
@@ -39,6 +39,21 @@ class LowestSolution {
     }
 
     public static void main(String[] args){
-        //1. 
+        //1. Create the tree that I need to put into this
+        TreeNode inRoot = TreeNode.createSampleTree();
+
+        //2. create an obj
+        LowestSolution obj = new LowestSolution(inRoot);
+
+        TreeNode node1 = new TreeNode(15);
+        TreeNode node2 = new TreeNode(3);
+        //3. call the method
+        TreeNode returnedOutput = obj.lowestCommonAncestor(node1, node1);
+
+        //4. print out the value of the root
+        System.out.println(obj.root);
+
+        System.out.println("______");
+        System.out.println(returnedOutput);
     }
 }
