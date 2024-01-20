@@ -7,5 +7,24 @@ public class TreeNode{
     TreeNode right;
 
     //constructor
+    public TreeNode(int x){
+        this.data = x;
+    }
 
+    //insert a node to the binary search tree
+    public void insertNode(int value){
+        if(value<data){
+            if(left == null){
+                left = new TreeNode(value);
+            }else{
+                left.insertNode(value);
+            }
+        }else{
+            if(right == null){
+                right = new TreeNode(value);
+            }else{
+                right.insertNode(value);
+            }
+        }
+    }
 }
