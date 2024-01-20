@@ -46,6 +46,21 @@ public class TreeNode{
     }
 
     //traversing a tree (pre-order = NLR)
+    public void preOrderTraversal(){
+        //1. node
+        System.out.println(data);
+
+        //2. check left
+        if(left != null){
+            left.preOrderTraversal();
+        }
+
+        //3. check right
+        if(right!=null){
+            right.preOrderTraversal();
+        }
+    }
+
     
 
     //static method with some sample values
