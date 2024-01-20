@@ -27,4 +27,15 @@ public class TreeNode{
             }
         }
     }
+
+    //static method with some sample values
+    public static TreeNode createSampleTree(){
+        TreeNode root = new TreeNode(10);
+        root.insertNode(5);
+        root.insertNode(15);
+        root.insertNode(3);
+        root.insertNode(12);
+        root.insertNode(18);
+        return root;
+    }
 }
