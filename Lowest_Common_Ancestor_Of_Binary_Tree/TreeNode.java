@@ -13,13 +13,17 @@ public class TreeNode{
 
     //insert a node to the binary search tree
     public void insertNode(int value){
+        //place in left
         if(value<data){
             if(left == null){
                 left = new TreeNode(value);
             }else{
                 left.insertNode(value);
             }
-        }else{
+        }
+
+        //place in right
+        else{
             if(right == null){
                 right = new TreeNode(value);
             }else{
@@ -77,14 +81,22 @@ public class TreeNode{
         System.out.println(data);
     }
 
+    //retrieve the data of the particular treenODE
+    public int returnData(){
+        return data;
+    }
+
     //static method with some sample values
     public static TreeNode createSampleTree(){
-        TreeNode root = new TreeNode(10);
-        root.insertNode(5);
-        root.insertNode(15);
+        TreeNode root = new TreeNode(6);
+        root.insertNode(2);
+        root.insertNode(8);
+        root.insertNode(0);
+        root.insertNode(4);
+        root.insertNode(7);
+        root.insertNode(9);
         root.insertNode(3);
-        root.insertNode(12);
-        root.insertNode(18);
+        root.insertNode(5);
         return root;
     }
 }

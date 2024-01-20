@@ -45,15 +45,25 @@ class LowestSolution {
         //2. create an obj
         LowestSolution obj = new LowestSolution(inRoot);
 
-        TreeNode node1 = new TreeNode(15);
-        TreeNode node2 = new TreeNode(3);
+        TreeNode node1 = new TreeNode(2);
+        TreeNode node2 = new TreeNode(8);
         //3. call the method
         TreeNode returnedOutput = obj.lowestCommonAncestor(node1, node1);
 
         //4. print out the value of the root
         System.out.println(obj.root);
+        //5. in order traversal of the retuened output
+        System.out.println("_________________");
+        System.out.println("IN ORDER TRAVERSAL");
+        obj.root.inOrderTraversal();
+        
+    
+
+
 
         System.out.println("______");
-        System.out.println(returnedOutput);
+        System.out.println(returnedOutput.returnData());
+        System.out.println("IN ORDER TRAVERSAL");
+        
     }
 }
