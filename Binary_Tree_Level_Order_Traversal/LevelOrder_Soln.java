@@ -19,7 +19,10 @@ public class LevelOrder_Soln {
         this.queue = new LinkedList<>();
     }
 
-    //3. 
+    //3. method to return the final result organized by levels
+    public List<List<Integer>> returnFinalResult(TreeNode root){
+        //1. 
+    }
     public static void main(String[] args){
 
     }
