@@ -2,10 +2,10 @@ package Validate_Binary_Search_Tree;
 
 public class TreeNode {
 
-    //private member variables
-    private int val;
-    private TreeNode left;
-    private TreeNode right;
+    //public member variables
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     //constructor
     //1. empty constructor defined
