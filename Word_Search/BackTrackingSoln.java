@@ -34,7 +34,28 @@ public class BackTrackingSoln {
             return true;
         }
 
-        //2. 
+        //2. check the boundaries
+        boolean rowsChecker = (row<0 || row > this.ROWSCOUNTER)?true:false;
+        boolean colnsChecker = (coln<0 || coln > this.COLUMNSCOUNTER)? true: false;
+
+        if(rowsChecker || colnsChecker || this.board[row][coln] != word.charAt(index)){
+            return false;
+        }
+
+        //3. DFS - check the unexplored
+        this.board[row][coln] = '*';
+        int[] rowOffset = {0,1,0,-1};
+        int[] colnOffset = {1,0,-1,0};
+
+        //4. loop through the adjacent boxes
+        for(int i = 0;i<4;i++){
+            if(this.backtrackingMeth(row+rowOffset[i], coln+colnOffset[i], index)){
+                return true;
+            }
+        }
+
+        this.board[row][coln] = word.charAt(index);
+        return false;
     }
     public static void main(String[] args){
 
