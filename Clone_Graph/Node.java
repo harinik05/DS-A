@@ -19,4 +19,10 @@ public class Node {
         this.value = value;
         this.neighbors = new ArrayList<>();
     }
+
+    //3. constructor (value + list)
+    public Node(int value, List<Node> inArr){
+        this.value = value;
+        this.neighbors = inArr;
+    }
 }
