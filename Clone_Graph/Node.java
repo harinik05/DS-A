@@ -14,5 +14,9 @@ public class Node {
         this.neighbors = new ArrayList<>();
     }
 
-    //2. 
+    //2. constructor (value only)
+    public Node(int value){
+        this.value = value;
+        this.neighbors = new ArrayList<>();
+    }
 }
